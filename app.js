@@ -101,7 +101,7 @@ const connectSrcUrls = [
     "https://events.mapbox.com/",
 ];
 const fontSrcUrls = [];
-app.use(
+app.use(    
     helmet.contentSecurityPolicy({
         directives: {
             defaultSrc: [],
@@ -121,7 +121,6 @@ app.use(
         },
     })
 );
-
 
 
 app.use(passport.initialize());
